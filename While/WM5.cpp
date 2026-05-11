@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    int n, y=1;
-    cout << "Vamos a calcular cuantos numeros pares hay hasta n numero.\n";
+    int n, y=1, f=0;
+    cout << "Vamos a calcular la suma de los numeros pares hasta n numero.\n";
     cout << "Ingresa n: ";
     cin >> n;
 
@@ -13,7 +13,7 @@ int main()
     {
         if ( y % 2 == 0)
         {
-            cout << y << endl;
+            f = f + y;
             y = y+1;
             
         }
@@ -23,6 +23,8 @@ int main()
         }
     
     }
+
+    cout << f << endl;
 
     return 0;
 }
