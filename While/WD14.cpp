@@ -9,9 +9,17 @@ int main ()
     cout << "Numero: \n";
     cin >> n;
 
-   while (n > 1) 
-    {
+    w = n;
 
+    while(w > 1)
+    {
+        w = w/2;
+    }
+
+    cout << w;
+
+    while (n > 1) 
+    {
         f = n % 2;     
         cout << f;      
         n = n / 2;      
